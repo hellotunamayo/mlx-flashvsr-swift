@@ -1,16 +1,43 @@
+# Build artifacts
 .build/
-.swiftpm/
+out/
+DerivedData/
+
+# Xcode
+*.xcworkspace/
+*.xcodeproj/project.xcworkspace/
+
+# Swift Package Manager
 Package.resolved
-# oracle: everything fetched or generated is reproducible from oracle/setup_mirror.sh + the scripts
-oracle/mirror/
-oracle/weights/
-oracle/goldens/
-oracle/**/__pycache__/
-oracle/reports/**/*.png
-oracle/reports/**/*.mp4
-# weights are published separately (Apache-2.0, HF) — never committed here
+.swiftpm/
+
+# Models (weights, large files)
+Models/
 *.safetensors
+*.pt
 *.pth
-*.ckpt
+*.bin
+
+# Video files (input/output)
+*.mp4
+*.mov
+*.webm
+*.avi
+*.mkv
+*.m4v
+
+# Temporary files
+*.tmp
+*.temp
+output*.mp4
+output*.mov
+
+# OS files
 .DS_Store
-.build-release/
+._*
+
+# Logs
+*.log
+
+# Shell Script
+run.sh

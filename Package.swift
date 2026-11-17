@@ -60,6 +60,14 @@ let package = Package(
             path: "Sources/Smoke",
             swiftSettings: [.swiftLanguageMode(.v5)]
         ),
+        .executableTarget(
+            name: "flashvsr-cli",
+            dependencies: [
+                "MLXFlashVSR",
+                .product(name: "MLXServeCore", package: "mlx-engine-swift"),
+                .product(name: "MLXToolKit", package: "mlx-engine-swift"),
+            ]
+        ),
         .testTarget(
             name: "FlashVSRMLXTests",
             dependencies: [

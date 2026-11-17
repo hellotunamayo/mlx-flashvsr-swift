@@ -260,7 +260,7 @@ extension FlashVSRUpscalePackage {
         [
             QuantFootprint(quant: .bf16, residentBytes: 3_600_000_000, peakActivationBytes: 19_000_000_000,
                            activationScaling: ActivationScaling(axis: .outputPixels, baseBytes: 4_730_000_000,
-                                                                bytesPerUnit: 14_230, measuredCeiling: 1920 * 1152)),
+                                                                bytesPerUnit: 14_230, measuredCeiling: 8_294_400)),
             QuantFootprint(quant: .fp32, residentBytes: 7_100_000_000, peakActivationBytes: 33_100_000_000,
                            activationScaling: ActivationScaling(axis: .outputPixels, baseBytes: 33_100_000_000,
                                                                 bytesPerUnit: 0, measuredCeiling: 1280 * 768)),
